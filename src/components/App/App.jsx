@@ -13,15 +13,15 @@ export function App() {
   const onChangeFeedback = (opinion) => {
     switch (opinion) {
       case "good":
-        setGood((prevState) => prevState + 1);
+        setGood(prevState => prevState + 1);
         break;
       
       case "neutral":
-        setNeutral((prevState) => prevState + 1);
+        setNeutral(prevState => prevState + 1);
         break;
       
       case "bad":
-        setBad((prevState) => prevState + 1);
+        setBad(prevState => prevState + 1);
         break;
       
       default:
