@@ -29,7 +29,6 @@ export function App() {
    }
   }
     
-  const options = ["good", "neutral", "bad"];
 
 
   const countTotalFeedback = () => {
@@ -50,7 +49,7 @@ export function App() {
           <InnerContainer>
             <Section title="Please leave your feedback">
               <FeedbackOptions
-              options={options}
+              options={Object.keys(({ good, neutral, bad }) )}
               onLeaveFeedback={onChangeFeedback}                   
               />
             </Section>
@@ -119,7 +118,7 @@ export function App() {
 //             <Section title="Please leave your feedback">
 //               <FeedbackOptions
 //               options={Object.keys(this.state)}
-//               onLeaveFeedback={this.onHandleClick}                   
+//               onLeaveFeedback={this.onHandleClick}
 //               />
 //             </Section>
 
@@ -139,3 +138,6 @@ export function App() {
 //         )
 //     }
 // };
+
+
+  // const options = ["good", "neutral", "bad"];
